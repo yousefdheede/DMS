@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="t1" editable="false" layoutX="14.0" layoutY="84.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #86A3BF;" />
+      <TextField fx:id="t2" editable="false" layoutX="14.0" layoutY="180.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #86A3BF;" />
+      <TextField fx:id="t3" editable="false" layoutX="14.0" layoutY="258.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #86A3BF;" />
+      <TextField fx:id="t4" editable="false" layoutX="14.0" layoutY="355.0" prefHeight="31.0" prefWidth="149.0" style="-fx-background-color: #86A3BF;" />
+      <TextField fx:id="t11" editable="false" layoutX="217.0" layoutY="84.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #86A3BF;" />
+      <TextField fx:id="t21" editable="false" layoutX="211.0" layoutY="188.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #86A3BF;" />
+      <TextField fx:id="t31" editable="false" layoutX="211.0" layoutY="258.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #86A3BF;" />
+      <TextField fx:id="t41" editable="false" layoutX="217.0" layoutY="355.0" prefHeight="31.0" prefWidth="149.0" style="-fx-background-color: #86A3BF;" />
+      <JFXButton layoutX="24.0" layoutY="22.0" text="&lt;&lt;&lt;" />
+      <JFXButton layoutX="259.0" layoutY="552.0" text="home " />
+   </children>
+</AnchorPane>

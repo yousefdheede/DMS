@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="2000.0" fitWidth="742.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ba.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="38.0" layoutY="36.0" style="-fx-background-color: white;" text="&lt;&lt;&lt;" />
+      <ImageView fitHeight="313.0" fitWidth="208.0" layoutX="14.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@m1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="320.0" fitWidth="305.0" layoutX="379.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@m2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="320.0" fitWidth="305.0" layoutX="222.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@k2.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="26.0" layoutY="119.0" prefHeight="30.0" prefWidth="109.0" text="On this Day ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="159.0" text="September 8">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="374.0" text="3 Years ago " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="23.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@src/note_24px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="204.0" layoutX="45.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ll.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="204.0" layoutX="267.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@lk.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="68.0" layoutY="458.0" prefHeight="131.0" prefWidth="154.0" text="What could you do today that would matter a year from now ? " textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="231.0" layoutY="127.0" prefHeight="30.0" prefWidth="109.0" text="On this Day " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="231.0" layoutY="167.0" text="may 10" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="228.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@src/note_24px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="389.0" layoutY="120.0" prefHeight="30.0" prefWidth="109.0" text="On this Day ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="389.0" layoutY="160.0" text="April 26">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="386.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@src/note_24px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="235.0" layoutY="374.0" text="3 Years ago " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="389.0" layoutY="374.0" text="3 Years ago " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="416.0" layoutY="430.0" prefHeight="105.0" prefWidth="200.0" text="       DMS:&#10;&#10;A completly Private Diary simple to use easy to love " wrapText="true" />
+      <ImageView fitHeight="59.0" fitWidth="30.0" layoutX="417.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@src/pin_in_circle_30px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="286.0" layoutY="407.0" prefHeight="131.0" prefWidth="109.0" text="How much did i spend today ?" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

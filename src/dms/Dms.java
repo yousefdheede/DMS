@@ -20,7 +20,7 @@ public class Dms extends Application {
         
   
      
-    Parent root = FXMLLoader.load(getClass().getResource(".fxml"));
+    Parent root = FXMLLoader.load(getClass().getResource("mainpage.fxml"));
   primaryStage.setTitle(" DMS ");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
