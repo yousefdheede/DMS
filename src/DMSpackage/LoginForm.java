@@ -3,8 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DMSpackage;
-
+package digitaldiary;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -57,9 +56,9 @@ public class LoginForm extends javax.swing.JFrame {
         });
         getContentPane().setLayout(null);
         getContentPane().add(tfName);
-        tfName.setBounds(140, 100, 250, 22);
+        tfName.setBounds(140, 100, 250, 25);
         getContentPane().add(passFld);
-        passFld.setBounds(140, 150, 250, 22);
+        passFld.setBounds(140, 150, 250, 25);
 
         btnEnter.setText("Enter");
         btnEnter.addActionListener(new java.awt.event.ActionListener() {

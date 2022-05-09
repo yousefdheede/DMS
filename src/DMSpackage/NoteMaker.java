@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DMSpackage;
+package digitaldiary;
 
 import java.awt.AWTException;
 import java.awt.*;
@@ -155,7 +155,7 @@ public class NoteMaker extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnOpenCal);
-        btnOpenCal.setBounds(40, 20, 160, 25);
+        btnOpenCal.setBounds(40, 20, 160, 23);
 
         btnShowTodaysNotes.setText("Show Today's Notes");
         btnShowTodaysNotes.addActionListener(new java.awt.event.ActionListener() {
@@ -164,7 +164,7 @@ public class NoteMaker extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnShowTodaysNotes);
-        btnShowTodaysNotes.setBounds(30, 300, 170, 25);
+        btnShowTodaysNotes.setBounds(30, 300, 170, 23);
 
         btnSetCurrentDate.setText("<html><body>Set date to<br>to Current date</body></html>");
         btnSetCurrentDate.addActionListener(new java.awt.event.ActionListener() {
@@ -173,7 +173,7 @@ public class NoteMaker extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnSetCurrentDate);
-        btnSetCurrentDate.setBounds(30, 220, 170, 50);
+        btnSetCurrentDate.setBounds(30, 220, 170, 37);
 
         lblSelectedDate.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         lblSelectedDate.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -184,7 +184,7 @@ public class NoteMaker extends javax.swing.JFrame {
 
         fileMenu.setText("File");
 
-        menNew.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.CTRL_MASK));
+        menNew.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         menNew.setText("New");
         menNew.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -193,7 +193,7 @@ public class NoteMaker extends javax.swing.JFrame {
         });
         fileMenu.add(menNew);
 
-        menOpen.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_MASK));
+        menOpen.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         menOpen.setText("Open...");
         menOpen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -211,7 +211,7 @@ public class NoteMaker extends javax.swing.JFrame {
         });
         fileMenu.add(menSav);
 
-        menSaveAs.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
+        menSaveAs.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         menSaveAs.setText("Save As...");
         menSaveAs.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -224,7 +224,7 @@ public class NoteMaker extends javax.swing.JFrame {
 
         editMenu.setText("Edit");
 
-        menUndo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Z, java.awt.event.InputEvent.CTRL_MASK));
+        menUndo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Z, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         menUndo.setText("Undo");
         menUndo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -234,7 +234,7 @@ public class NoteMaker extends javax.swing.JFrame {
         editMenu.add(menUndo);
         editMenu.add(jSeparator3);
 
-        menCut.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, java.awt.event.InputEvent.CTRL_MASK));
+        menCut.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         menCut.setText("Cut");
         menCut.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -243,7 +243,7 @@ public class NoteMaker extends javax.swing.JFrame {
         });
         editMenu.add(menCut);
 
-        menCopy.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
+        menCopy.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         menCopy.setText("Copy");
         menCopy.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -252,7 +252,7 @@ public class NoteMaker extends javax.swing.JFrame {
         });
         editMenu.add(menCopy);
 
-        menPaste.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_MASK));
+        menPaste.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         menPaste.setText("Paste");
         menPaste.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -262,7 +262,7 @@ public class NoteMaker extends javax.swing.JFrame {
         editMenu.add(menPaste);
         editMenu.add(jSeparator4);
 
-        menFind.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_MASK));
+        menFind.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         menFind.setText("Find...");
         menFind.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -301,7 +301,7 @@ public class NoteMaker extends javax.swing.JFrame {
         });
         formatMenu.add(menFont);
 
-        menBold.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_B, java.awt.event.InputEvent.CTRL_MASK));
+        menBold.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_B, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         menBold.setText("Bold");
         menBold.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -310,7 +310,7 @@ public class NoteMaker extends javax.swing.JFrame {
         });
         formatMenu.add(menBold);
 
-        menItalics.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_I, java.awt.event.InputEvent.CTRL_MASK));
+        menItalics.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_I, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         menItalics.setText("Italics");
         menItalics.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -319,7 +319,7 @@ public class NoteMaker extends javax.swing.JFrame {
         });
         formatMenu.add(menItalics);
 
-        menUnderline.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.CTRL_MASK));
+        menUnderline.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         menUnderline.setText("Underline");
         menUnderline.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
