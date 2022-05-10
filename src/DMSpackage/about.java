@@ -5,7 +5,6 @@
  */
 package DMSpackage;
 
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.Random;
@@ -16,7 +15,7 @@ import javax.swing.JOptionPane;
  *
  * @author aks
  */
-public class LoginForm extends javax.swing.JFrame {
+public class about extends javax.swing.JFrame {
 
     /**
      * Creates new form LoginForm
@@ -24,7 +23,7 @@ public class LoginForm extends javax.swing.JFrame {
     
     
     
-    public LoginForm() {
+    public about() {
         initComponents();
     }
 
@@ -37,18 +36,12 @@ public class LoginForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        tfName = new javax.swing.JTextField();
-        passFld = new javax.swing.JPasswordField();
-        btnEnter = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         backgroundLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Login to Digital Diary");
-        setMaximumSize(new java.awt.Dimension(542, 321));
         setMinimumSize(new java.awt.Dimension(542, 321));
-        setPreferredSize(new java.awt.Dimension(542, 321));
         setSize(new java.awt.Dimension(542, 321));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowOpened(java.awt.event.WindowEvent evt) {
@@ -56,73 +49,39 @@ public class LoginForm extends javax.swing.JFrame {
             }
         });
         getContentPane().setLayout(null);
-        getContentPane().add(tfName);
-        tfName.setBounds(140, 100, 250, 22);
-        getContentPane().add(passFld);
-        passFld.setBounds(140, 150, 250, 22);
 
-        btnEnter.setText("Enter");
-        btnEnter.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setText("<<<");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEnterActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnEnter);
-        btnEnter.setBounds(304, 200, 80, 25);
-
-        jLabel1.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(34, 18, 233));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel1.setText("Name");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(25, 100, 100, 30);
-
-        jLabel2.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(34, 18, 233));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel2.setText("Password");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(30, 150, 100, 30);
+        getContentPane().add(jButton1);
+        jButton1.setBounds(0, 0, 59, 25);
 
         backgroundLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         getContentPane().add(backgroundLabel);
-        backgroundLabel.setBounds(0, 0, 540, 320);
+        backgroundLabel.setBounds(0, 0, 660, 640);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-        String image[]={"image1.png", "image2.png", "image3.png", "image4.png", "image5.png"};
+        String image[]={"Capture2.png"};
         Random r= new Random();
-         double a=Math.random()*4;
+         double a=Math.random();
          int i=(int)a;
 
         backgroundLabel.setIcon(new ImageIcon(image[i]));
     }//GEN-LAST:event_formWindowOpened
 
-    private void btnEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnterActionPerformed
-       try
-       {
-           String name=tfName.getText();
-           String pass=new String(passFld.getPassword());
-           
-           BufferedReader br=new BufferedReader(new FileReader(".authen.dat"));
-           if((name.equals(br.readLine())) && (pass.equals(br.readLine())))
-           {
-               NoteMaker nm=new NoteMaker();
-               nm.setVisible(true);
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+       //  main nm=new main();
+        //       nm.setVisible(true);
                this.dispose();
-           }
-           else
-           {
-               JOptionPane.showMessageDialog(null, "Invalid Credentials");
-           }
-       }
-       catch(Exception e)
-       {
-           e.printStackTrace();
-       }
-    }//GEN-LAST:event_btnEnterActionPerformed
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -141,30 +100,27 @@ public class LoginForm extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(LoginForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(about.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(LoginForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(about.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(LoginForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(about.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(LoginForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(about.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new LoginForm().setVisible(true);
+                new about().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel backgroundLabel;
-    private javax.swing.JButton btnEnter;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JPasswordField passFld;
-    private javax.swing.JTextField tfName;
+    private javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
 }

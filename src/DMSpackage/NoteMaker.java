@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package digitaldiary;
+package DMSpackage;
 
 import java.awt.AWTException;
 import java.awt.*;
@@ -86,6 +86,8 @@ public class NoteMaker extends javax.swing.JFrame {
         btnSetCurrentDate = new javax.swing.JButton();
         lblSelectedDate = new javax.swing.JLabel();
         themeLabel = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        gopublic = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         menNew = new javax.swing.JMenuItem();
@@ -117,9 +119,7 @@ public class NoteMaker extends javax.swing.JFrame {
         jMenuItem4.setText("jMenuItem4");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(735, 507));
         setMinimumSize(new java.awt.Dimension(735, 507));
-        setPreferredSize(new java.awt.Dimension(735, 507));
         setResizable(false);
         setSize(new java.awt.Dimension(735, 507));
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -134,7 +134,7 @@ public class NoteMaker extends javax.swing.JFrame {
         timeLabel.setFont(new java.awt.Font("L M Mono Prop Lt10", 1, 18)); // NOI18N
         timeLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         getContentPane().add(timeLabel);
-        timeLabel.setBounds(433, 20, 260, 37);
+        timeLabel.setBounds(440, 20, 260, 37);
 
         txtPane.setContentType("text/rtf,\"\""); // NOI18N
         txtPane.setEditorKit(new StyledEditorKit());
@@ -155,7 +155,7 @@ public class NoteMaker extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnOpenCal);
-        btnOpenCal.setBounds(40, 20, 160, 23);
+        btnOpenCal.setBounds(40, 20, 120, 25);
 
         btnShowTodaysNotes.setText("Show Today's Notes");
         btnShowTodaysNotes.addActionListener(new java.awt.event.ActionListener() {
@@ -164,7 +164,7 @@ public class NoteMaker extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnShowTodaysNotes);
-        btnShowTodaysNotes.setBounds(30, 300, 170, 23);
+        btnShowTodaysNotes.setBounds(30, 300, 170, 25);
 
         btnSetCurrentDate.setText("<html><body>Set date to<br>to Current date</body></html>");
         btnSetCurrentDate.addActionListener(new java.awt.event.ActionListener() {
@@ -173,14 +173,32 @@ public class NoteMaker extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnSetCurrentDate);
-        btnSetCurrentDate.setBounds(30, 220, 170, 37);
+        btnSetCurrentDate.setBounds(30, 220, 170, 41);
 
         lblSelectedDate.setFont(new java.awt.Font("Cantarell", 1, 18)); // NOI18N
         lblSelectedDate.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         getContentPane().add(lblSelectedDate);
         lblSelectedDate.setBounds(10, 160, 210, 50);
         getContentPane().add(themeLabel);
-        themeLabel.setBounds(0, 10, 740, 480);
+        themeLabel.setBounds(0, 100, 740, 390);
+
+        jButton1.setText("Add Image");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(170, 20, 100, 25);
+
+        gopublic.setText("Go Public");
+        gopublic.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gopublicActionPerformed(evt);
+            }
+        });
+        getContentPane().add(gopublic);
+        gopublic.setBounds(280, 20, 90, 25);
 
         fileMenu.setText("File");
 
@@ -640,6 +658,20 @@ public class NoteMaker extends javax.swing.JFrame {
         th.setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+addphoto ap=new addphoto();
+ap.setVisible(true);// TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void gopublicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gopublicActionPerformed
+publicboard p=new publicboard();
+String x=txtPane.getText();
+p.setVisible(true);
+p.setpublictext(x);
+
+// TODO add your handling code here:
+    }//GEN-LAST:event_gopublicActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -682,6 +714,8 @@ public class NoteMaker extends javax.swing.JFrame {
     private javax.swing.JMenu editMenu;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenu formatMenu;
+    private javax.swing.JButton gopublic;
+    private javax.swing.JButton jButton1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem4;
