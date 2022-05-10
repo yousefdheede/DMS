@@ -105,13 +105,8 @@ public class SignUp extends javax.swing.JFrame {
 
         backgroundLabel.setIcon(new ImageIcon(image[i]));
     }//GEN-LAST:event_formWindowOpened
-public String xx;
-  public  String  getuser(){
-      String x = "John Doe :-->> ";
-      if(xx==null)
-        return x;
-      else return xx+(":-->>");
-    }
+public static String xx;
+ 
     private void btnProceedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProceedActionPerformed
         String name=nameTf.getText().trim();
         xx=name;
@@ -156,6 +151,14 @@ public String xx;
         
     }//GEN-LAST:event_btnProceedActionPerformed
 
+    
+     public  String  getuser(){
+     String x = "John Doe :-->> ";
+      if(xx==null)
+        return x;
+      else return xx+(":-->>");
+
+    }
     private void nameTfFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nameTfFocusGained
         if(nameTf.getText().equals("Name"))
         {

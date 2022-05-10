@@ -662,9 +662,9 @@ public class NoteMaker extends javax.swing.JFrame {
 addphoto ap=new addphoto();
 ap.setVisible(true);// TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void gopublicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gopublicActionPerformed
 publicboard p=new publicboard();
+    private void gopublicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gopublicActionPerformed
+
 String x=txtPane.getText();
 p.setVisible(true);
 p.setpublictext(x);

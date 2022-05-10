@@ -97,7 +97,7 @@ s.setVisible(true);// TODO add your handling code here:
     x=ss.getuser();
     jTextArea1.append(x);
         jTextArea1.append(s);
-     //   jTextArea1.append("\n");
+    jTextArea1.append("\n");
     }
     
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
